@@ -52,7 +52,7 @@
             <section class="hero">
                 <div class="container">
                     <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-                    <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
+                    <button type="button" class="btn" data-modal-open>Заказать услугу</button>
                 </div>
             </section>
            <!-- FEATURES-->
@@ -374,6 +374,20 @@
                     </li>
                    </ul>
                </div>
+               <div class="subscribe-box">
+                   <b class="subscribe-title">Подпишитесь на рассылку</b>
+                    <form class="subscribe">
+                        <input type="email" name="email" class="subscribe-input" placeholder="E-mail" autocomplete="off">
+                        <button type="submit" class="subscribe-button btn">
+                            Подписаться
+                            <svg width="24" height="24" class="social-link-icon subscribe-icon">
+                                <use href="./images/sprite.svg#icon-telegram"></use>
+                            </svg>
+                        </button>
+                    </form>
+            
+               </div>
+              
                
             </div>
         </footer>
@@ -384,6 +398,44 @@
                         <use href="./images/sprite.svg#icon-close"></use>
                     </svg>
                 </button>
+                
+                <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+                <form>
+                    <label class="input-text" for="name">Имя</label>
+                    <div class="input-box">
+                        <input type="text" name="name" class="form-input" id="name">
+                        <svg width="12" height="12" class="modal-icon">
+                            <use href="./images/sprite.svg#icon-person"></use>
+                        </svg>
+                    </div>
+
+                    <label class="input-text" for="tel">Телефон</label>
+                    <div class="input-box">
+                        <input type="tel" name="phone_number" class="form-input" id="tel">
+                        <svg width="13" height="13" class="modal-icon">
+                            <use href="./images/sprite.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+
+                    <label class="input-text" for="mail">Почта</label>
+                    <div  class="input-box">
+                        <input type="email" name="email" class="form-input" id="mail">
+                        <svg width="15" height="12" class="modal-icon">
+                            <use href="./images/sprite.svg#icon-Vector"></use>
+                        </svg>
+                    </div>
+
+                    <label class="input-text" for="comment">Комментарий</label>
+                    <textarea name="comment" placeholder="Введите текст" class="text-area" id="comment"></textarea>
+                    
+
+                    <label class="agreement">
+                        <input type="checkbox" name="policy" class="checkbox">
+                        <span class="agreement-text">Соглашаюсь с рассылкой и принимаю <a href="#" class="agreement-link"> Условия договора</a></span>
+                    </label>
+
+                    <button type="submit" class="btn modal-button">Отправить</button>
+                </form>
 
             </div>
         </div>
