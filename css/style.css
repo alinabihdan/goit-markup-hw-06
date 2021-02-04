@@ -663,7 +663,7 @@ a {
     height: 100%;
     padding: 63px 24px; 
     background-color: rgba(33, 150, 243, 0.9);
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -784,6 +784,7 @@ a {
     transition: fill 250ms var(--standart-cubic);
 }
 
+.form-input:hover + .modal-icon,
 .form-input:focus + .modal-icon {
     fill: var(--accent-color);
 }
@@ -867,10 +868,15 @@ a {
     margin: 0 auto;
 }
 
+.modal-button:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
 /*  ???? фокус не = выбранное состояние? */
 
 .checkbox:focus + .agreement-text::before {
-    transform: scale(1.2);
+    /* transform: scale(1.2); */
+    outline: 2px solid var(--accent-color);
 } 
 
 .checkbox:checked + .agreement-text::before {
