@@ -449,6 +449,12 @@ a {
     line-height: 1.71;
     color: var(--footer-text-color);
     font-style: normal;
+    transition: color 250ms var(--standart-cubic);
+}
+
+.adress-item:hover,
+.adress-item:focus {
+    color: var(--accent-color);
 }
 
 .footer-box {
@@ -521,11 +527,19 @@ a {
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
+    outline: none;
 
     font-size: 16px;
     line-height: 1.25;
     color: var(--accent-bg-color);
+    transition: border-color 250ms var(--standart-cubic);
 }
+
+.subscribe-input:hover,
+.subscribe-input:focus {
+    border-color: var(--accent-color);
+}
+
 .subscribe-button {
     display: flex;
     align-items: center;
